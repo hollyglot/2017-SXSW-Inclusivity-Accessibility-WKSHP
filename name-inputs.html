@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Name Inputs</title>
+ </head>
+ <body>
+
+ 	<h1>You may be unintentionally discriminating against folks when you ask for their names, for example:</h1>
+ 	<ul>
+ 		<li>Brian O'Reilly (apostrophe)</li>
+		<li>Sara Inés Calderón (accents)</li>
+		<li>Joseph Gordon-Levitt (dash)</li>
+		<li>Laura Weidman Powers (spaces)</li>
+		<li>Kejmanee Pichaironnarongsongkram (character limit)</li>
+ 	</ul>
+
+ 	<br />
+
+ 	<p>The <span style="font-weight: bold;">maxlength</span> HTML attribute can affect some of your users' ability to provide you with accurate information.</p>
+
+ 	Last Name: <input type="text" name="lastname" maxlength="10">
+
+ 	<h1>If you use client-side validation or Regex, you want to make sure you're not restricting length, characters, spaces, dashes or apostrophes.</h1>
+
+ </body>
+</html>

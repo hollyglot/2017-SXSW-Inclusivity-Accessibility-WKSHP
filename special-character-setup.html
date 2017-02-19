@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Special Characters</title>
+ </head>
+ <body>
+
+ 	<h1>You need UTF-8 charset in your life, specifically in your HTML</h1>
+
+ 	<p>To tell your software to accept special characters you're going to want to use the UTF-8 charset in the <head> section of your HTML document (first thing because it tells the browser how to interpret your page) like this:
+ 	</p>
+
+ 	<code>
+ 		<html>
+ 		<head>
+ 		<meta http-equiv=“Content-Type” content=“text/html; charset=utf-8”>
+ 		</head>
+ 		<body></body>
+ 		</html>
+ 	</code>
+
+ 	<h1>Also in your database</h1>
+
+ 	<p>You'll need to set your database storage (tables, columns, etc) and collation to use UTF-8 charset.</p>
+
+ 	<p>PHP gets a bit more complicated, though. You'll have to use multibyte-safe functions to make sure it works.</p>
+
+
+ </body>
+</html>
+
