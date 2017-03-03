@@ -10,14 +10,17 @@
  	<p>To tell your software to accept special characters you're going to want to use the UTF-8 charset in the <head> section of your HTML document (first thing because it tells the browser how to interpret your page) like this:
  	</p>
 
- 	<code>
- 		<html>
- 		<head>
- 		<meta http-equiv=“Content-Type” content=“text/html; charset=utf-8”>
- 		</head>
- 		<body></body>
- 		</html>
- 	</code>
+ 	<img src="./meta.png"/>
+
+ 	<h1>You may also have to update your server encoding</h1>
+ 	<p>Make sure that your HTTP header is also UTF-8.</p>
+ 	<ul>
+ 		<li>If you're using PHP you can use the header() function:</li>
+ 		<li style="font-style: italic;">header('Content-Type:text/html; charset=UTF-8');</li>
+ 		<li>There are other ways to make sure your HTTP header is using UTF-8, just depends on your tech.</li>
+ 		<li>You can find more about this <a href="http://htmlpurifier.org/docs/enduser-utf8.html#fixcharset-server">here</a>.</li>
+ 	</ul>
+
 
  	<h1>Also in your database</h1>
 
