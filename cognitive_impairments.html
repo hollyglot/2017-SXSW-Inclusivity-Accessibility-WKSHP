@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <script src="./jquery-ui/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
+    <script>
+      $( function() {
+        $( ".menu" ).menu();
+      } );
+    </script>
+    <style>
+
+      main {
+        width: 50%;
+      }
+
+      .ui-menu { 
+        display: inline-block;
+        float: left;
+        width: 150px;
+      }
+
+      .form {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .menu {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .menuitem {
+        border: solid 1px black;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        text-decoration: underline;
+      }
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!--- Roles: https://www.w3.org/wiki/PF/XTech/HTML5/RoleAttribute -->
+
+    <!-- Menu Items, ARIA Role and Tab Index  -->
+
+    <ul class="menu">
+      <li>
+        <div>Café Cortado</div>
+        <ul>
+          <li>
+            <div>Our Story</div>
+            <ul>
+              <li>
+                <div>History</div>
+              </li>
+              <li>
+                <div>Team</div>
+                <ul>
+                  <li>
+                    <div>Sophía Gonzalez</div>
+                  </li>
+                  <li>
+                    <div>Brandon Peters</div>
+                  </li>
+                  <li>
+                    <div>Anna Lee</div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div>Photos</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>Location</div>
+          </li>
+          <li>
+            <div>Hours</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div>Menu</div>
+        <ul>
+          <li>
+            <div>Breakfast</div>
+          </li>
+          <li>
+            <div>Lunch</div>
+          </li>
+          <li>
+            <div>Desserts</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li>
+        <div>Types of Coffee</div>
+        <ul>
+          <li>
+            <div>Arabica</div>
+            <ul>
+              <li>
+                <div>Brutte</div>
+              </li>
+              <li>
+                <div>Columbian</div>
+                <ul>
+                  <li>
+                    <div>History</div>
+                  </li>
+                  <li>
+                    <div>Quality</div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div>Ethiopian</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>Robustica</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div>Coffee Roasting</div>
+        <ul>
+          <li>
+            <div>Process</div>
+          </li>
+          <li>
+            <div>Equipment</div>
+          </li>
+          <li>
+            <div>Home Roasting</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div>Brewing</div>
+        <ul>
+          <li>
+            <div>Pour Over</div>
+          </li>
+          <li>
+            <div>French Press</div>
+          </li>
+          <li>
+            <div>Espresso</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ARIA Role and Tab Index  -->
+
+    <main>
+      <h1>Our service is the Bees Knees!</h1>
+
+      <img src="coffee.jpg" />
+
+
+      <h2>Columbian Coffee</h2>
+      <p>Colombian coffee is often regarded as some of the highest quality coffee in the world. Colombia has traditionally grown arabica beans and its unique geography makes it perfectly suited for producing a delicious, high quality brew. No one knows exactly when coffee arrived in what is now Colombia. Some think the bean came with Jesuit priests in the seventeenth century, but the first shipment of coffee overseas wasn’t until 1835, when 2500 pounds of coffee headed from Colombia to the United States. In pre and post-independence times, most export agriculture was done on large-scale latifundos controlled by elites. By 1860, coffee had emerged as the dominant export crop, and shortly thereafter, tariffs on coffee exports had become the main source of government revenues. Land reform in the 1930’s did some to relieve the inequality in land ownership, but by 1980, 10% of farms, including ranches, managed 80% of arable land. This chronic inequality has not been as prevalent in the coffee sector, and the nation has shown a strong trend towards small fincas in the last 30 years. </p>
+
+      <h2>Indian Filter</h2>
+      <p>Indian filter coffee uses an apparatus typically made of stainless steel. There are two cylindrical compartments, one sitting on top of the other. The upper compartment has tiny holes (less than ~0.5 mm). And then there is the pierced pressing disc with a stem handle, and a covering lid. The finely ground coffee with 15–20% chicory is placed in the upper compartment, the pierced pressing disc is used to cover the ground coffee, and hot water is poured on top of this disk. Unlike the regular drip brew, the coffee does not start pouring down immediately. This is because of the chicory, which holds on to the water longer than just the ground coffee beans can. This causes the beverage to be much more potent than the American drip variety. 2–3 teaspoonfuls of this decoction is added to a 100–150 ml milk. Sugar is then sometimes added by individual preference.</p>
+      <p> <a href="#">Purchase beans</a></p>
+
+    </main>
+
+
+  </body>
+</html>
+
