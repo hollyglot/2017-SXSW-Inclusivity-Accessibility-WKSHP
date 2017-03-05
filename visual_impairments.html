@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <style>
+      .form {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .menu {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .menuitem {
+        border: solid 1px black;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        text-decoration: underline;
+      }
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!--- Roles: https://www.w3.org/wiki/PF/XTech/HTML5/RoleAttribute -->
+
+    <!-- Menu Items, ARIA Role and Tab Index -->
+
+    <div class="menu">
+      <div class="menuitem">
+        First
+      </div>
+      <div class="menuitem">
+        Second
+      </div>
+      <div class="menuitem">
+        Third
+      </div>
+    </div>
+
+
+    <!-- Aria Label-->
+    <input type='password' value='password' placeholder='Password'>
+
+
+    <!-- Aria Label -->
+    <form class="form" action="/" method="get">
+      <input type="checkbox" name="checkboxes" value="I love kittens!" checked="checked">I love kittens!<br>
+      <input type="checkbox" name="checkboxes" value="I am cuteness adverse...">I am cuteness adverse...<br>
+    </form>
+
+    <!-- Alt tags -->
+    <img src="happy_diverse_coworkers.jpg" />
+
+    <!-- Text -->
+    <p>
+      This is content we don't want you to miss. It is most important.
+    </p>
+
+
+  </body>
+</html>
+
