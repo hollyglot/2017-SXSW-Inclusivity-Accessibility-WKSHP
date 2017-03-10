@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <style>
+      .form {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .menu {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .menuitem {
+        border: solid 1px black;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        text-decoration: underline;
+      }
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!--- Roles: https://www.w3.org/wiki/PF/XTech/HTML5/RoleAttribute -->
+
+    <!-- Menu Items, ARIA Role and Tab Index  -->
+
+    <div class="menu" role="menu">
+      <div class="menuitem" tabindex="1" role="menuitem">
+        First
+      </div>
+      <div class="menuitem" tabindex="2" role="menuitem">
+        Second
+      </div>
+      <div class="menuitem" tabindex="3" role="menuitem">
+        Third
+      </div>
+    </div>
+
+
+    <!-- Aria Label-->
+    <input type='password' tabindex="4" value='password' placeholder='Password' role='textbox' aria-label='Create password longer than 6 characters with at least 1 number'>
+
+
+    <!-- Aria Label -->
+    <form class="form" action="/" method="get">
+      <input role="checkbox" aria-checked="true" aria-label="I love kittens!" type="checkbox" name="checkboxes" value="I love kittens!" checked="checked" tabindex="5">I love kittens!<br>
+      <input role="checkbox" aria-checked="false" aria-label="I am cuteness adverse..." type="checkbox" name="checkboxes" value="I am cuteness adverse..." tabindex="6">I am cuteness adverse...<br>
+    </form>
+
+    <!-- Alt tags -->
+    <img alt="Laughing diverse group of hip, business casual co-workers" src="happy_diverse_coworkers.jpg" role="img" tabindex="7" />
+
+    <!-- Text -->
+    <p role="main" tabindex="8">
+      This is content we don't want you to miss. It is most important.
+    </p>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <script src="./jquery-ui/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
+    <style>
+
+      main {
+        width: 50%;
+      }
+
+      .ui-menu { 
+        display: inline-block;
+        float: left;
+        width: 150px;
+      }
+
+      .form {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .menu {
+        display: inline-block;
+        float: left;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        list-style-type: none;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+
+      .menu li {
+        display: inline-block;
+        float: left;
+        width: 100px;
+      }
+
+      .menu li:hover .menuitem:first) {
+        display: block;
+      }
+
+      .menu ul li {
+        list-style-type: none;
+      }
+
+      .menuitem {
+        border: solid 1px black;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+      }
+
+      .menuitem.child {
+        display: none;
+      }
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!--- Roles: https://www.w3.org/wiki/PF/XTech/HTML5/RoleAttribute -->
+
+    <!-- Menu Items, ARIA Role and Tab Index  -->
+
+    <ul class="menu" role="menu">
+      <li>
+        <div tabindex="1" class="menuitem" role="menuitem">Café Cortado</div>
+        <ul>
+          <li>
+            <div tabindex="2" class="menuitem child" role="menuitem">Our Story</div>
+            <ul>
+              <li>
+                <div tabindex="3" class="menuitem child" role="menuitem">History</div>
+              </li>
+              <li>
+                <div tabindex="4" class="menuitem child" role="menuitem">Team</div>
+                <ul>
+                  <li>
+                    <div tabindex="5" class="menuitem child" role="menuitem">Sophía Gonzalez</div>
+                  </li>
+                  <li>
+                    <div tabindex="6" class="menuitem child" role="menuitem">Brandon Peters</div>
+                  </li>
+                  <li>
+                    <div tabindex="7" class="menuitem child" role="menuitem">Anna Lee</div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div tabindex="8" class="menuitem child" role="menuitem">Photos</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div tabindex="9" class="menuitem child" role="menuitem">Location</div>
+          </li>
+          <li>
+            <div tabindex="10" class="menuitem child" role="menuitem">Hours</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div tabindex="11" class="menuitem" role="menuitem">Menu</div>
+        <ul>
+          <li>
+            <div tabindex="12" class="menuitem child" role="menuitem">Breakfast</div>
+          </li>
+          <li>
+            <div tabindex="13" class="menuitem child" role="menuitem">Lunch</div>
+          </li>
+          <li>
+            <div tabindex="14" class="menuitem child" role="menuitem">Desserts</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="menu" role="menu">
+      <li>
+        <div tabindex="15" class="menuitem" role="menuitem">Types of Coffee</div>
+        <ul>
+          <li>
+            <div tabindex="16" class="menuitem child" role="menuitem">Arabica</div>
+            <ul>
+              <li>
+                <div tabindex="17" class="menuitem child" role="menuitem">Brutte</div>
+              </li>
+              <li>
+                <div tabindex="18" class="menuitem child" role="menuitem">Columbian</div>
+                <ul>
+                  <li>
+                    <div tabindex="19" class="menuitem child" role="menuitem">History</div>
+                  </li>
+                  <li>
+                    <div tabindex="20" class="menuitem child" role="menuitem">Quality</div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div tabindex="21" class="menuitem child" role="menuitem">Ethiopian</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div tabindex="22" class="menuitem child" role="menuitem">Robustica</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div tabindex="23" class="menuitem child" role="menuitem">Coffee Roasting</div>
+        <ul>
+          <li>
+            <div tabindex="24" class="menuitem child" role="menuitem">Process</div>
+          </li>
+          <li>
+            <div tabindex="25" class="menuitem child" role="menuitem">Equipment</div>
+          </li>
+          <li>
+            <div tabindex="26" class="menuitem child" role="menuitem">Home Roasting</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div tabindex="27" class="menuitem child" role="menuitem">Brewing</div>
+        <ul>
+          <li>
+            <div tabindex="28" class="menuitem child" role="menuitem">Pour Over</div>
+          </li>
+          <li>
+            <div tabindex="29" class="menuitem child" role="menuitem">French Press</div>
+          </li>
+          <li>
+            <div tabindex="30" class="menuitem child" role="menuitem">Espresso</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ARIA Role and Tab Index  -->
+
+    <main>
+      <h1 tabindex="32">Our service is the Bees Knees!</h1>
+
+      <img src="coffee.jpg" alt="diverse group of hands holding terra cotta coffee mugs in a circle"/>
+
+
+      <h2 tabindex="33">Columbian Coffee</h2>
+      <p tabindex="34">Colombian coffee is often regarded as some of the highest quality coffee in the world. Colombia has traditionally grown arabica beans and its unique geography makes it perfectly suited for producing a delicious, high quality brew. No one knows exactly when coffee arrived in what is now Colombia. Some think the bean came with Jesuit priests in the seventeenth century, but the first shipment of coffee overseas wasn’t until 1835, when 2500 pounds of coffee headed from Colombia to the United States. In pre and post-independence times, most export agriculture was done on large-scale latifundos controlled by elites. By 1860, coffee had emerged as the dominant export crop, and shortly thereafter, tariffs on coffee exports had become the main source of government revenues. Land reform in the 1930’s did some to relieve the inequality in land ownership, but by 1980, 10% of farms, including ranches, managed 80% of arable land. This chronic inequality has not been as prevalent in the coffee sector, and the nation has shown a strong trend towards small fincas in the last 30 years. </p>
+
+      <h2 tabindex="35">Indian Filter</h2>
+      <p>Indian filter coffee uses an apparatus typically made of stainless steel. There are two cylindrical compartments, one sitting on top of the other. The upper compartment has tiny holes (less than ~0.5 mm). And then there is the pierced pressing disc with a stem handle, and a covering lid. The finely ground coffee with 15–20% chicory is placed in the upper compartment, the pierced pressing disc is used to cover the ground coffee, and hot water is poured on top of this disk. Unlike the regular drip brew, the coffee does not start pouring down immediately. This is because of the chicory, which holds on to the water longer than just the ground coffee beans can. This causes the beverage to be much more potent than the American drip variety. 2–3 teaspoonfuls of this decoction is added to a 100–150 ml milk. Sugar is then sometimes added by individual preference.</p>
+      <p> <a tabindex="36" href="#">Purchase beans</a></p>
+
+    </main>
+
+
+  </body>
+</html>
+
+
+
+    <!--- Roles: https://www.w3.org/wiki/PF/XTech/HTML5/RoleAttribute -->
+
+    <!-- Menu Items, ARIA Role and Tab Index  -->
+
+<!--     <div class="menu" role="menu">
+      <div class="menuitem" tabindex="1" role="menuitem">
+        First
+      </div>
+      <div class="menuitem" tabindex="2" role="menuitem">
+        Second
+      </div>
+      <div class="menuitem" tabindex="3" role="menuitem">
+        Third
+      </div>
+    </div> -->
