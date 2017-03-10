@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="./jquery-ui/external/jquery/jquery.js"></script>
+    <script src="./jquery.countdown.min.js"></script>
+
+    <style>
+
+      .form {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      body{
+        text-align: left;
+        font-family: sans-serif;
+        font-weight: 100;
+        padding: 100px;
+      }
+
+      h1{
+        color: #396;
+        font-weight: 100;
+        font-size: 40px;
+        margin: 40px 0px 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Give Us All Your INFO</h1>
+
+    <p> Time Remaining: <span id="clock"></span></p>
+
+    <form class="form" action="/" method="get">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Middle Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Maiden Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Mother's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Father's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Sibling's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Cat's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Dog's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>      
+        <label>Neighbor's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>First Love's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Pet Rock's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>2nd Teacher's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>First Car's Name</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Address</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Address 2</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Address 3</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Address 4</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>City</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>State</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Country</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Zip</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Ethnicity</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Age</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Hair Color</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Eye Color</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Skin Color</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Height</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Weight</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Pant Size</label>
+        <input type="text" name="fullname" />
+      </div> 
+      <div>
+        <label>Shirt Size</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>Shoe Size</label>
+        <input type="text" name="fullname" />
+      </div>
+      <div>
+        <label>IQ</label>
+        <input type="text" name="fullname" />
+      </div> 
+    </form>
+
+
+    <script>
+      let twominutes = new Date();
+      twominutes.setMinutes(twominutes.getMinutes() + 2);
+      $('#clock').countdown(twominutes, function(event) {
+        $(this).html(event.strftime('%M:%S'));
+      });
+    </script>
+
+  </body>
+</html>
+
